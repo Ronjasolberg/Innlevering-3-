@@ -66,7 +66,12 @@ public abstract class Innlegg {
 	}
 	
 	public boolean erLik(Innlegg innlegg) {
+     if (innlegg.getId()==this.id){
+         return true;
 
+     } else {
+         return false;
+     }
 
 
 	}
@@ -79,9 +84,9 @@ public abstract class Innlegg {
 	}
 	
 	// Metoden nedenfor er kun for valgfri oppgave 6
-	public String toHTML() {
+	//public String toHTML() {
 		
-		
+
 				
-	}
+	//}
 }
