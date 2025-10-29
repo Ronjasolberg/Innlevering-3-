@@ -4,52 +4,61 @@ import no.hvl.dat100.common.TODO;
 
 public abstract class Innlegg {
 	
-	// TODO - deklarering av objektvariable
+	private int id;
+    private String bruker;
+    private String dato;
+    private int likes;
+
 	
 	public Innlegg() {
 		
 	}
 	
 	public Innlegg(int id, String bruker, String dato) {
+    this(id, bruker, dato,0);;
 
-		// TODO 
-		throw new UnsupportedOperationException(TODO.constructor("Innlegg"));
+
 	}
 
 	public Innlegg(int id, String bruker, String dato, int likes) {
 
-		// TODO - START
+		this.id = id;
+        this.bruker= bruker;
+        this.dato = dato;
+        this.likes = likes;
 		
-		throw new UnsupportedOperationException(TODO.constructor("Innlegg"));
+
 	}
 	
 	public String getBruker() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		return bruker;
 
 	}
 
-	public void setBruker(String bruker) {
-		throw new UnsupportedOperationException(TODO.method());
-	}
+	public void setBruker(String bruker){
+        this.bruker=bruker;
+
+    }
+
 
 	public String getDato() {
-		throw new UnsupportedOperationException(TODO.method());
+		return dato;
 		
 	}
 
-	public void setDato(String dato) {
-		throw new UnsupportedOperationException(TODO.method());
-	}
+	public void setDato(String dato){
+        this.dato=dato;
+    }
 
 	public int getId() {
-		throw new UnsupportedOperationException(TODO.method());
+		return id;
 
 	}
 
 	public int getLikes() {
-		throw new UnsupportedOperationException(TODO.method());
 
+     return likes;
 	}
 	
 	public void doLike () {
