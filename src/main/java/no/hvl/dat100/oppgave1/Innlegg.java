@@ -68,6 +68,7 @@ public abstract class Innlegg {
 	public boolean erLik(Innlegg innlegg) {
 
 
+
 	}
 	
 	@Override
@@ -80,7 +81,7 @@ public abstract class Innlegg {
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		
 				
 	}
 }
