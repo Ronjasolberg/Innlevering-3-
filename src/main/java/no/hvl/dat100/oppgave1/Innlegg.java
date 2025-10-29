@@ -66,14 +66,14 @@ public abstract class Innlegg {
 	}
 	
 	public boolean erLik(Innlegg innlegg) {
-		
+
 
 	}
 	
 	@Override
 	public String toString() {
-		
-		throw new UnsupportedOperationException(TODO.method());
+		return id + "\n" + bruker + "\n" + dato + "\n"+ likes + "\n";
+
 				
 	}
 	
