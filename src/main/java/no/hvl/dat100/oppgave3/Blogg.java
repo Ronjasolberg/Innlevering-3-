@@ -61,30 +61,36 @@ public class Blogg {
 	}
 
     @Override
-	public String toString() {
+    public String toString() {
+        String tekst = getAntall() + "\n";
 
-        throw new UnsupportedOperationException(TODO.method());
-	}
+        for (int i = 0; i < nesteLedig; i++) {
+            tekst += innleggstabell[i].toString();
+        }
 
-	// valgfrie oppgaver nedenfor
-	
+        return tekst;
+    }
+
+
+    // valgfrie oppgaver nedenfor
+
 	public void utvid() {
 		throw new UnsupportedOperationException(TODO.method());
 	}
-	
+
 	public boolean leggTilUtvid(Innlegg innlegg) {
 
 		throw new UnsupportedOperationException(TODO.method());
-		
+
 	}
-	
+
 	public boolean slett(Innlegg innlegg) {
-		
+
 		throw new UnsupportedOperationException(TODO.method());
 	}
-	
+
 	public int[] search(String keyword) {
-		
+
 		throw new UnsupportedOperationException(TODO.method());
 
 	}
