@@ -62,6 +62,7 @@ public class Blogg {
 
     @Override
 	public String toString() {
+
         throw new UnsupportedOperationException(TODO.method());
 	}
 
