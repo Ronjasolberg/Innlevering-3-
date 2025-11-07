@@ -15,8 +15,11 @@ public abstract class Innlegg {
 	}
 	
 	public Innlegg(int id, String bruker, String dato) {
-    this(id, bruker, dato,0);;
 
+        this.id = id;
+        this.bruker = bruker;
+        this.dato = dato;
+        likes = 0;
 
 	}
 
@@ -26,7 +29,6 @@ public abstract class Innlegg {
         this.bruker= bruker;
         this.dato = dato;
         this.likes = likes;
-		
 
 	}
 	
