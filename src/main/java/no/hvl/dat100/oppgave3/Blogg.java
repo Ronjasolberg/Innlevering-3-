@@ -44,7 +44,7 @@ public class Blogg {
 	}
 
 	public boolean ledigPlass() {
-		throw new UnsupportedOperationException(TODO.method());
+        return nesteLedig < innleggstabell.length;
 
 	}
 	
