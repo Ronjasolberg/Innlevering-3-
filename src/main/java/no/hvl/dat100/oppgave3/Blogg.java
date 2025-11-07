@@ -2,6 +2,8 @@ package no.hvl.dat100.oppgave3;
 
 import no.hvl.dat100.common.TODO;
 import no.hvl.dat100.oppgave1.*;
+import no.hvl.dat100.oppgave2.Bilde;
+import no.hvl.dat100.oppgave2.Tekst;
 
 public class Blogg {
 
@@ -50,11 +52,17 @@ public class Blogg {
 	
 	public boolean leggTil(Innlegg innlegg) {
 
-		throw new UnsupportedOperationException(TODO.method());
+		if (ledigPlass()) {
+            innleggstabell[nesteLedig] = innlegg;
+            nesteLedig++;
+            return true;
+        }
+        return false;
 	}
-	
+
+    @Override
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method());
+        throw new UnsupportedOperationException(TODO.method());
 	}
 
 	// valgfrie oppgaver nedenfor
